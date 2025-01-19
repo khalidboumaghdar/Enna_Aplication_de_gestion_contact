@@ -170,6 +170,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+
+
+
 function enregister(){
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -187,6 +191,10 @@ function enregister(){
 
     window.location.href = 'afficher.html';
 }
+
+
+
+
 function modifierContact(index) {
     const contact = contacts[index];
     document.getElementById("nom").value = contact.nom;
@@ -197,7 +205,10 @@ function modifierContact(index) {
     document.getElementById("telephone").value = contact.telephone;
 
     supprimerContact(index); 
-}
+}   
+
+
+
 
 function supprimerContact(index) {
     if (confirm("Êtes-vous sûr de vouloir supprimer ce contact ?")) {
@@ -206,5 +217,9 @@ function supprimerContact(index) {
         window.location.href = 'afficher.html';
     }
 }
+
+
+
+
 
 window.onload = afficherContacts;
