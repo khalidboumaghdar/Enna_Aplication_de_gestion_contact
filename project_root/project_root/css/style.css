@@ -1,0 +1,86 @@
+.div-height{
+    height: 100vh;
+}.div-height .Menu{
+    height: 38px;
+}.div-height .div-logo .Logo{
+    width: 547px;
+
+}.div-padding h1{
+    padding-top: 222px;
+    padding-left: 79px;
+}.div-padding form{
+    padding-top: 23px;
+}.p{
+    color: red;
+    font-weight: bold;
+}.alert{
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .div-height {
+        height: 51vh;
+    }.div-padding h1 {
+        padding-top: 69px;
+        padding-left: 159px;
+    }.div-padding form{
+        padding-top: 15px;
+        padding-left: 0px;
+        color: black;
+    }
+
+}
+@media screen and (max-width: 600px) {
+.bg_white{
+    background-color: #fff !important;
+}.bg_primary{
+    background-color: #4387F2 !important;
+}.div-height {
+    height: 59vh;
+}.div-padding h1 {
+    padding-top: 86px;
+    padding-left: 93px;
+}.div-height .div-logo .Logo {
+    width: 321px;
+}    .style {
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 115px;
+    width: 100%;
+    z-index: 1; /* Ensure inputs are clickable */
+    position: relative; /* Manage stacking */
+}
+.div-height {
+    height: 59vh;
+    z-index: 0; /* Prevent overlap */
+}
+.div-height .div-logo .Logo {
+    width: 321px;
+}  .div-padding h1 {
+    padding-top: 53px;
+    padding-left: 0px;
+    color: white;
+}.div-padding form{
+    padding-top: 0px;
+    padding-left: 0px;
+    color: white;
+}.btn-outline-primary {
+    background-color: white;
+    color: #4387F2;
+}thead{
+    display: none;
+}td{
+    display: flex;
+    color: white;
+}    .style1 {
+    height: 61vh;
+    border-radius: 20px 20px 0px 0px;
+    z-index: -1;
+    padding-top: 16px;
+    width: 109%;
+}tbody td i{
+font-size: 50px;
+
+}
+
+}
+
