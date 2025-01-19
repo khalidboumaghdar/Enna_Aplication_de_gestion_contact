@@ -1,4 +1,4 @@
-let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+let contacts = JSON.parse(localStorage.getItem("contacts"));
 
 function afficherContacts() {
     const contactsTableBody = document.querySelector("#contactsTable tbody");
@@ -50,6 +50,9 @@ function validateOnBlur() {
     const errorElementVille = document.getElementById("villeerorr");
     const errorElementTelephone = document.getElementById("telephoneerorr");
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    const phoneRegex = /^\d{10}$/; 
+
     if (nom.value=== "") {
         isValid = false;
         nom.style.border = "2px solid red";
@@ -74,6 +77,11 @@ function validateOnBlur() {
         isValid = false;
         email.style.border = "2px solid red";
         errorElementEmail.textContent = "Veuillez saisir un email.";
+        errorElementEmail.style.color = "red";
+    } else if (!emailRegex.test(email.value)) {
+        isValid = false;
+        email.style.border = "2px solid red";
+        errorElementEmail.textContent = "Veuillez saisir un email valide.";
         errorElementEmail.style.color = "red";
     } else {
         email.style.border = "2px solid green";
@@ -103,6 +111,11 @@ function validateOnBlur() {
         telephone.style.border = "2px solid red";
         errorElementTelephone.textContent = "Veuillez saisir un numéro de téléphone.";
         errorElementTelephone.style.color = "red";
+    } else if (!phoneRegex.test(telephone.value)) {
+        isValid = false;
+        telephone.style.border = "2px solid red";
+        errorElementTelephone.textContent = "Veuillez saisir un numéro de téléphone valide (10 chiffres).";
+        errorElementTelephone.style.color = "red";
     } else {
         telephone.style.border = "2px solid green";
         errorElementTelephone.textContent = "";
@@ -112,6 +125,7 @@ function validateOnBlur() {
 }
 
 
+
 function ajouterContact() {
     const nom = document.getElementById("nom").value;
     const prenom = document.getElementById("prenom").value;
@@ -119,7 +133,10 @@ function ajouterContact() {
     const genre = document.querySelector('input[name="genre"]:checked').value;
     const ville = document.getElementById("ville").value;
     const telephone = document.getElementById("telephone").value;
-if(!nom || !prenom || !email || !genre || !ville || !telephone){
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    const phoneRegex = /^\d{10}$/; 
+if(!nom || !prenom || !email || !genre || !ville || !telephone || !emailRegex.test(email) || !phoneRegex.test(telephone) ){
     alert("Veuillez remplir tous les champs.");
     return;
     }else{
