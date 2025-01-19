@@ -1,10 +1,10 @@
-#Contact Organizer App1Contact Organizer App
+# Contact Organizer App1Contact Organizer App
 Catégorie Brief projet
 Compétences
 Semaine Semaine3
 Sprint Sprint2
 Technos Bootstrap Git&Github HTML&CSS JS Maquette
-#Context
+# Context
 Dans de nombreuses situations personnelles et professionnelles, la gestion
 efficace des contacts devient un enjeu crucial. Les entreprises, indépendants, et
 particuliers ont besoin dʼorganiser leurs relations en regroupant les informations
@@ -12,7 +12,7 @@ essentielles telles que les noms, numéros de téléphone, adresses email, et au
 données pertinentes. Une application de gestion des contacts accessible et
 intuitive permet de répondre à ce besoin tout en offrant une solution moderne et
 dématérialisée.
-#Objectifs
+# Objectifs
 Contact Organizer App2Vous êtes des développeurs front-end, et lʼentreprise BrandMarketing,
 spécialisée dans les solutions digitales pour les PME, vous a contactée pour
 réaliser une application de gestion de contacts. Leur objectif est de proposer à
@@ -33,7 +33,7 @@ BONUS
 Modifier un contact  Mise à jour des informations existantes.
 Supprimer un contact  Supprimer un contact sélectionné de la
 liste.
-#Technologies:
+# Technologies:
 HTML  Structure de la page et formulaires.
 Framework CSS  Bootstrap/Tailwind  Stylisation de l'interface utilisateur
 (responsive design).
@@ -41,7 +41,7 @@ Contact Organizer App3JavaScript :
 Validation des formulaires.
 Manipulation du DOM pour gérer l'affichage dynamique des contacts.
 Gestion des événements (clic, soumission, etc.).
-#Structure des Dossiers
+# Structure des Dossiers
 project_root/
 │
 ├── index.html # Structure de la page
